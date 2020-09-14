@@ -1,0 +1,18 @@
+
+<!-- <div>
+    <div class="row">
+        <div class="col-sm-12 btn btn-primary">
+            Image Slider
+        </div>
+
+    </div>
+</div>    -->
+    <hr style="background-color:chartreuse;"/>
+    <div class="row" style="background-color: chartreuse;">
+        <ngx-slick-carousel class="carousel" #slickModal = "slick-carousel"  [config] = "slideConfig" style="background-color: aqua;"> 
+            <div ngxSlickItem *ngFor = "let image of images " class="slide" >
+                <img src="{{image.img}}" width="30%">
+
+            </div>
+        </ngx-slick-carousel>
+    </div>

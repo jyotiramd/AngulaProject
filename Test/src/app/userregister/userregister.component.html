@@ -1,0 +1,75 @@
+<div class=" jumbotron">
+    <div class="table table-bordered bg-dark text-danger">
+        <h4 class="header green lighter bigger">
+            <i class="ace-icon fa fa-users blue"></i>
+            New User Registration
+        </h4>
+        <div class="space-6"></div>
+        <p>Enter Your Details To Begin:</p>
+        <form [formGroup] = "form" (ngSubmit) = "register()">
+            <fieldset>
+                <label class="block clearfix">
+                    <span class="block input-icon input-icon-right">
+                        <input type="email" class="form-control" placeholder="Email" formControlName="user_email" required/>
+                        <i class="ace-icon fa fa-envelope"></i>
+                    </span>
+                </label>
+                <br>
+                <label class="block clearfix">
+                    <span class="block input-icon input-icon-right">
+                        <input type="text" class="form-control" placeholder="Username" formControlName="user_username"required/>
+                        <i class="ace-icon fa fa-user"></i>
+                    </span>
+                </label>
+                <br>
+                <label class="block clearfix">
+                    <span class="block input-icon input-icon-right">
+                        <input type="password" class="form-control" placeholder="Password" formControlName="user_password" required/>
+                        <i class="ace-icon fa fa-lock"></i>
+                    </span>
+                </label>
+                <br>
+                <label class="block clearfix">
+                    <span class="block input-icon input-icon-right">
+                        <input type="password" class="form-control" placeholder="Repeat password" formControlName="user_password" required/>
+                        <i class="ace-icon fa fa-retweet"></i>
+                    </span>
+                </label>
+                <br>
+                <label class="block clearfix">
+                    <span class="block input-icon input-icon-right">
+                        <input type="text" class="form-control" placeholder="Mobile Number" formControlName="user_mobile" required/>
+                        <i class="ace-icon fa fa-user"></i>
+                    </span>
+                </label>
+                <br>
+                <label class="block">
+                    <input type="checkbox" class="ace" />
+                    <span class="lbl">
+                        I accept the
+                        <a href="#">User Agreement</a>
+                    </span>
+                </label>
+
+                <div class="space-24"></div>
+
+                <div class="clearfix">
+                    <button type="reset" class="width-30 pull-left btn btn-sm">
+                        
+                        <span class="btn btn-primary">Reset</span>
+                    </button>
+                    &nbsp;&nbsp;
+                     <button type="submit" class="width-65 pull-right btn btn-sm btn-success">
+                        <span class="bigger-110">Register</span> 
+                        <!-- <a class="btn btn-outline-danger" routerLink = "/regsuccess"></a> -->
+                        <!-- <a class="btn btn-outline-danger  " routerLink="/userregister" >Signup</a> -->
+                         <i class="ace-icon fa fa-arrow-right icon-on-right"></i>
+                    </button> 
+                </div>
+            </fieldset>
+
+            
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,32 @@
+{
+  "userreg": [
+    {
+      "user_email": "jotirm@gmailcom",
+      "user_username": "jotiram",
+      "user_password": "yo12",
+      "user_mobile": "55565566",
+      "id": 1
+    },
+    {
+      "user_email": "amar@ggmail.com",
+      "user_username": "Am",
+      "user_password": "amr",
+      "user_mobile": "77777777",
+      "id": 2
+    },
+    {
+      "user_email": "jj@gmail.com",
+      "user_username": "jk",
+      "user_password": "asd",
+      "user_mobile": "12345789",
+      "id": 3
+    },
+    {
+      "user_email": "Laxman@gmail.com",
+      "user_username": "Laxman",
+      "user_password": "123qwe",
+      "user_mobile": "77766667767",
+      "id": 4
+    }
+  ]
+}

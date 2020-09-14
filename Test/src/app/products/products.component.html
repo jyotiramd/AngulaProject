@@ -1,0 +1,53 @@
+<div class="container jumbotron">
+    <div class="table table-bordered bg-dark text-danger">
+
+        <form [formGroup] = "form" (ngSubmit) = "addProduct()" >
+            <div > 
+                <label class="control-label">Product Name</label>
+                <input type="text" placeholder="Product Name"
+                 formControlName = "product_name" required/>
+            </div>
+            <div>
+                <label class="control-label">Product CodeWord</label>
+                <input type="text" placeholder="Product CodeWord"
+                formControlName = "product_code" required/>    
+            </div>
+            <div>
+                <label class="control-label">Product GST(%)</label>
+                <input type="text" placeholder="Product GST"
+                formControlName = "product_gst" required/>
+            </div>
+            <div>
+                <label class="control-label">Product HSN</label>
+                <input type="text" placeholder="Product HSN"
+                formControlName = "product_hsn" required/>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-success">AddProduct</button> &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </div>
+        </form>
+    </div>
+    <table class="table table-bordered table-striped table-hover">
+
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Code</th>
+                <th>Product GST</th>
+                <th>Prouct HSN</th>
+                <!-- <th>Student Branch</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let p of product">
+                <td>{{p.product_name}}</td>
+                <td>{{p.product_code}}</td>
+                <td>{{p.product_gst}}</td>
+                <!-- <td><input type="checkbox" [checked]= "s.student_isGraduate" disabled/> -->
+                <td>{{p.product_hsn}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
