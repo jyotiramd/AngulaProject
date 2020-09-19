@@ -1,16 +1,17 @@
 <div class="jumbotron">
-    <table class="bg-primary table table-bordered table-striped table-hover">
+    <table class="bg-muted table table-bordered table-striped table-hover">
 
         <thead>
             <tr>
-                <th style="text-align: center;background-color: gray;color: white;" colspan="4">User Registration Details</th>
+                <th style="text-align: center;background-color: gray;color: white;" colspan="6">User Registration Details</th>
             </tr>
             <tr>
                 <th>User Name</th>
                 <th>User Email</th>
                 <th>User Password</th>
                 <th>Student Mobile</th>
-                <!-- <th>Student Branch</th> -->
+                 <th>Update User Data</th>
+                 <th>Delete User Data</th> 
             </tr>
         </thead>
         <tbody>
@@ -18,8 +19,11 @@
                 <td>{{s.user_username}}</td>
                 <td>{{s.user_email}}</td>
                 <td>{{s.user_password}}</td>
-                
                 <td>{{s.user_mobile}}</td>
+                <td><a class="btn btn-info" [routerLink]="['/updateuserreg',s.id]">Update</a></td>
+                <td><a class="btn btn-danger" (click)="delete(s.id)">Delete</a></td>
+                    
+                
             </tr>
         </tbody>
     </table>

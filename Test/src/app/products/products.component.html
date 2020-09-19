@@ -14,7 +14,7 @@
             </div>
             <div>
                 <label class="control-label">Product GST(%)</label>
-                <input type="text" placeholder="Product GST"
+                <input type="text" placeholder="Product GST(%)"
                 formControlName = "product_gst" required/>
             </div>
             <div>
@@ -23,30 +23,51 @@
                 formControlName = "product_hsn" required/>
             </div>
             <div>
+                <label class="control-label">Product Price</label>
+                <input type="text" placeholder="Product Price"
+                formControlName = "product_price" required/>
+            </div>
+            <div>
+                <label class="control-label">Product Quantity</label>
+                <input type="number" placeholder="Product Quantity"
+                formControlName = "product_qty" required/>
+            </div>
+            <div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button type="submit" class="btn btn-success">AddProduct</button> &nbsp;&nbsp;&nbsp;
                 <button type="reset" class="btn btn-danger">Clear</button>
             </div>
         </form>
     </div>
+  
+  
     <table class="table table-bordered table-striped table-hover">
 
         <thead>
+            <tr>
+                <th style="text-align: center;background-color: gray;color: white;" colspan="8">Products Details</th>
+            </tr>
             <tr>
                 <th>Product Name</th>
                 <th>Product Code</th>
                 <th>Product GST</th>
                 <th>Prouct HSN</th>
-                <!-- <th>Student Branch</th> -->
+                <th>Prouct Price</th>
+                <th>Prouct Quantity</th>
+                <th>Update Product</th>
+                <th>Delete Product</th> 
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor = "let p of product">
+            <tr *ngFor = "let p of product"> 
                 <td>{{p.product_name}}</td>
                 <td>{{p.product_code}}</td>
-                <td>{{p.product_gst}}</td>
-                <!-- <td><input type="checkbox" [checked]= "s.student_isGraduate" disabled/> -->
+                <td>{{p.product_gst}}</td> 
                 <td>{{p.product_hsn}}</td>
+                <td>{{p.product_price}}</td>
+                <td>{{p.product_qty}}</td>
+                <td><a class="btn btn-info" [routerLink]="['/updateproduct',p.id]">Update</a></td>
+                <td><a class="btn btn-danger" (click)="delete(p.id)">Delete</a></td>
             </tr>
         </tbody>
     </table>

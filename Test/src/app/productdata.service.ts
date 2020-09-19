@@ -1,29 +1,28 @@
 import { Injectable } from '@angular/core';
 import { from } from 'rxjs';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http'
 
-const api = "http://localhost:5555/userreg/";
-
+const api = "http://localhost:5556/product/";
 
 @Injectable({
   providedIn: 'root'
 })
+export class ProductdataService {
 
-
-export class UserregdataService {
-
+  
   saveData(data){
+    return this.httpclient.post(api,data);
+  }
 
-    return this.httpclient.post(api,data)
+  getData(){
+    return this.httpclient.get(api); 
   }
 
   getDataById(id)
   {
     return this.httpclient.get(api+id);
   }
-  getData(){
-    return this.httpclient.get(api);
-  }
+  
 
   updateData(id,data)
   {
@@ -34,4 +33,5 @@ export class UserregdataService {
     return this.httpclient.delete(api+id);
   }
   constructor(private httpclient:HttpClient) { }
+
 }

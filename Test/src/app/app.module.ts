@@ -16,6 +16,10 @@ import {UserregdataService} from './userregdata.service';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import { from } from 'rxjs';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { UpdateuserregComponent } from './updateuserreg/updateuserreg.component';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HomeComponent, 
     ProductsComponent,
     RegsuccessComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent,
+    FooterComponent,
+    UpdateuserregComponent,
+    UpdateproductComponent
   ],
   imports: [
     BrowserModule,

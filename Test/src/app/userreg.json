@@ -1,25 +1,18 @@
 {
   "userreg": [
     {
-      "user_email": "jotirm@gmailcom",
-      "user_username": "jotiram",
+      "user_email": "jyotiram@gmail.com",
+      "user_username": "jyotiram123",
       "user_password": "yo12",
-      "user_mobile": "55565566",
+      "user_mobile": "9898989898",
       "id": 1
     },
     {
-      "user_email": "amar@ggmail.com",
-      "user_username": "Am",
+      "user_email": "amar@gmail.com",
+      "user_username": "Amar",
       "user_password": "amr",
-      "user_mobile": "77777777",
+      "user_mobile": "5555666666",
       "id": 2
-    },
-    {
-      "user_email": "jj@gmail.com",
-      "user_username": "jk",
-      "user_password": "asd",
-      "user_mobile": "12345789",
-      "id": 3
     },
     {
       "user_email": "Laxman@gmail.com",
@@ -27,6 +20,27 @@
       "user_password": "123qwe",
       "user_mobile": "77766667767",
       "id": 4
+    },
+    {
+      "user_email": "ankit123@gmail.com",
+      "user_username": "ankit",
+      "user_password": "ank",
+      "user_mobile": "98678999",
+      "id": 5
+    },
+    {
+      "user_email": "ketki123@gmailcom",
+      "user_username": "ketki",
+      "user_password": "ketki123",
+      "user_mobile": "979564534",
+      "id": 6
+    },
+    {
+      "user_email": "prayag12@gmail.com",
+      "user_username": "prayag",
+      "user_password": "prayag12",
+      "user_mobile": "887797777",
+      "id": 7
     }
   ]
 }

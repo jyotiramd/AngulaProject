@@ -1,0 +1,44 @@
+<div class="jumbotron">
+    <div class="table table-bordered bg-dark text-danger">
+        <h4 class="header green lighter bigger" style="text-align: center;">
+            <i class="ace-icon fa fa-users blue"></i>
+            Update Product Data
+        </h4>
+        <form [formGroup] = "form" (ngSubmit) = "update()" >
+            <div > 
+                <label class="control-label">Product Name</label>
+                <input type="text" placeholder="Product Name"
+                formControlName = "product_name" required/>
+            </div>
+            <div>
+                <label class="control-label">Product CodeWord</label>
+                <input type="text" placeholder="Product CodeWord"
+                formControlName = "product_code" required/>    
+            </div>
+            <div>
+                <label class="control-label">Product GST(%)</label>
+                <input type="text" placeholder="Product GST(%)"
+                formControlName = "product_gst" required/>
+            </div>
+            <div>
+                <label class="control-label">Product HSN</label>
+                <input type="text" placeholder="Product HSN"
+                formControlName = "product_hsn" required/>
+            </div>
+            <div>
+                <label class="control-label">Product Price</label>
+                <input type="text" placeholder="Product Price"
+                formControlName = "product_price" required/> 
+            </div>
+            <div>
+                <label class="control-label">Product Quantity</label>
+                <input type="number" placeholder="Product Quantity"
+                formControlName = "product_qty" required/>
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-success">SaveProduct</button> &nbsp;&nbsp;&nbsp;
+                <button type="reset" class="btn btn-danger">Clear</button>
+            </div>
+        </form>
+</div>    </div>

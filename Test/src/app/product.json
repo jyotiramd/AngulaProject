@@ -1,0 +1,58 @@
+{
+  "product": [
+    {
+      "product_name": "Dell inspiron3000",
+      "product_code": "dell12",
+      "product_gst": "12",
+      "product_hsn": "dell1234",
+      "product_price": "35500",
+      "product_qty": 5,
+      "id": 1
+    },
+    {
+      "product_name": "Dell inspiron1500",
+      "product_code": "dll1500",
+      "product_gst": "15",
+      "product_hsn": "123457",
+      "product_price": "40000",
+      "product_qty": 1,
+      "id": 2
+    },
+    {
+      "product_name": "Dell vostro",
+      "product_code": "dellvostro",
+      "product_gst": "12",
+      "product_hsn": "4343455",
+      "product_price": "32000",
+      "product_qty": 1,
+      "id": 3
+    },
+    {
+      "product_name": "Dell ",
+      "product_code": "de12",
+      "product_gst": "18",
+      "product_hsn": "3344322",
+      "product_price": "34400",
+      "product_qty": 1,
+      "id": 4
+    },
+    {
+      "product_name": "Dell 3593 inspiron",
+      "product_code": "dellins3593",
+      "product_gst": "14",
+      "product_hsn": "dell235",
+      "product_price": "37800",
+      "product_qty": "1",
+      "id": 5
+    },
+    {
+      "product_name": "dell inpiron3542",
+      "product_code": "dell3542",
+      "product_gst": "16",
+      "product_hsn": "1234457",
+      "product_price": "42450",
+      "product_qty": 2,
+      "id": 6
+    }
+  ]
+}

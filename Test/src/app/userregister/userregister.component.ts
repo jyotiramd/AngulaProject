@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {userregister} from './userregister';
 import {FormGroup,FormControl} from '@angular/forms';
 import { UserregdataService } from '../userregdata.service';
+import {ActivatedRoute,Router} from '@angular/router'
 
 
 @Component({
@@ -21,9 +22,10 @@ export class UserregisterComponent implements OnInit {
     //this.user.push(this.form.value);
     this.userregservice.saveData(this.form.value).subscribe((res)=>{
       alert("Data Saved Successfully...");
+      this.router.navigateByUrl("/dashboard")
     })
   }
-  constructor(private userregservice:UserregdataService) { }
+  constructor(private userregservice:UserregdataService,private router:Router) { }
 
   ngOnInit(): void {
 
